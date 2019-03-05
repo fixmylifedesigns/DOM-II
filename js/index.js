@@ -40,6 +40,7 @@ signUpBtn2.addEventListener("click", function(btn2) {
   console.log(`signUpBtn2 click!`);
   btn2.target.style.color = "white";
   btn2.target.style.background = "teal";
+  TweenMax.to("btn2", 1, {x: 100, ease: Bounce.easeOut});
 });
 
 // buttton 3
