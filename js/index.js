@@ -72,14 +72,14 @@ text.addEventListener("copy", function(e) {
 });
 
 // nav
-const anchorTag = document.querySelector('a');
-anchorTag.addEventListener('click', function(event){
- console.log(`Anchor was clicked!`);
- // This will prevent the form from submitting to action_page.php
+const anchorTag = document.querySelector("a");
+anchorTag.addEventListener("click", function(event) {
+  console.log(`Anchor was clicked!`);
+  // This will prevent the form from submitting to action_page.php
   event.preventDefault();
 });
 
-const nav = document.querySelector('.main-navigation');
+const nav = document.querySelector(".main-navigation");
 nav.addEventListener("mouseenter", function(navE) {
   console.log(`signUpBtn3 enter!`);
   navE.target.style.color = "green";
@@ -92,26 +92,55 @@ nav.addEventListener("mouseleave", function(navE) {
 
 // sections
 let section = document.querySelectorAll("section");
-console.log(section)
+console.log(section);
 
 const section1 = section[0];
 
-section1.addEventListener('dblclick', function(event){
+section1.addEventListener("dblclick", function(event) {
   event.currentTarget.style.display = "none";
-  console.log(event)
+  console.log(event);
 });
 
 const section2 = section[1];
 
-section2.addEventListener('dblclick', function(event){
+section2.addEventListener("dblclick", function(event) {
   event.currentTarget.style.display = "none";
-  console.log(event)
+  console.log(event);
 });
 
 const section3 = section[2];
 
-section3.addEventListener('dblclick', function(event){
+section3.addEventListener("dblclick", function(event) {
   event.currentTarget.style.display = "none";
-  console.log(event)
+  console.log(event);
 });
 
+// let intro = document.querySelectorAll(".intro");
+// console.log(intro)
+
+// const intro1 = intro[0];
+// intro1.addEventListener('click', function(event){
+
+//   let img1 = document.querySelector('img');
+//   let img2 = document.querySelector('.dancing');
+
+// event.currentTarget.style.display =".dancing";
+// //  console.log(`Anchor was clicked!`);
+//  // This will prevent the form from submitting to action_page.php
+//   // event.preventDefault();
+// });
+var img = document.getElementById("myImage");
+img.addEventListener("click", function() {
+  if (img.src != "img/2.gif") {
+    img.src = "img/2.gif";
+  } else {
+    img.src = "img/fun-bus.jpg";
+  }
+});
+
+var intro = document.getElementById("intro");
+intro.addEventListener("dblclick", function(e) {
+  console.log(`signUpBtn3 click!`);
+  e.target.style.color = "blue";
+  e.target.currentTarget.background = "teal";
+});

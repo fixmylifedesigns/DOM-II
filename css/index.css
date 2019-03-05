@@ -237,6 +237,12 @@ img {
 .home .intro h2 {
   margin-top: 20px;
 }
+.home .dancing {
+  display: none;
+  justify-content: space-between;
+  max-width: 100%;
+  height: auto;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
