@@ -139,8 +139,8 @@ img.addEventListener("click", function() {
 });
 
 var intro = document.getElementById("intro");
-intro.addEventListener("dblclick", function(e) {
+intro.addEventListener("click", function(e) {
   console.log(`signUpBtn3 click!`);
-  e.target.style.color = "blue";
-  e.target.currentTarget.background = "teal";
+  // e.target.style.color = "white";
+  e.currentTarget.style.background = "teal";
 });
